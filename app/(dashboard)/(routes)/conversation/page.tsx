@@ -47,6 +47,7 @@ const ConversationPage = () => {
     // form.handleSubmit(console.log)
 
     try {
+      // throw new Error("test");
       const userMessage: ChatCompletionRequestMessage = {
         role: "user",
         content: values.prompt,
