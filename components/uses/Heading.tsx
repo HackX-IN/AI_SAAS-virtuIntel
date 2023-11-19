@@ -1,6 +1,6 @@
 import React from "react";
 import { LucideIcon } from "lucide-react";
-import { cn } from "../../lib/utils.ts";
+import { cn } from "../../lib/utils";
 
 interface Props {
   title: string;
