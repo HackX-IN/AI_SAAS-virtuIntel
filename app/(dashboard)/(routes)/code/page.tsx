@@ -20,7 +20,7 @@ import { Button } from "../../../../components/ui/button";
 import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
-import UserAvatar from "@/components/uses/userAvatar";
+import { UserAvatar } from "@/components/uses/userAvatar";
 import BotAvatar from "@/components/uses/botAvatar";
 import { ChatCompletionRequestMessage } from "openai";
 import ReactMarkdown from "react-markdown";

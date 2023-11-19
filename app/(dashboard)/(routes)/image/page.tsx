@@ -20,7 +20,6 @@ import { Button } from "../../../../components/ui/button";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-import { cn } from "@/lib/utils";
 import {
   Select,
   SelectContent,
@@ -31,10 +30,6 @@ import {
 import { Card, CardFooter } from "@/components/ui/card";
 import toast from "react-hot-toast";
 import { useProModal } from "@/hooks/use-promodal";
-
-interface ChatCompletionContentPart {
-  text: string;
-}
 
 const ImageGeneration = () => {
   const router = useRouter();

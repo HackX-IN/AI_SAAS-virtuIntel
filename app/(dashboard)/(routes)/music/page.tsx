@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import * as z from "zod";
 import Heading from "@/components/uses/Heading";
-import { Loader, MessageSquare, Music } from "lucide-react";
+import { Loader, Music } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { formSchema } from "./constants";
 import { zodResolver } from "@hookform/resolvers/zod";

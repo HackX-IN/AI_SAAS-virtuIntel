@@ -1,15 +1,12 @@
-"use client";
+import { useUser } from "@clerk/nextjs";
 
-import { useUser } from "@clerk/clerk-react";
-import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-type Props = {};
-
-const userAvatar = (props: Props) => {
+export const UserAvatar = () => {
   const { user } = useUser();
+
   return (
-    <Avatar>
+    <Avatar className="h-8 w-8">
       <AvatarImage src={user?.profileImageUrl} />
       <AvatarFallback>
         {user?.firstName?.charAt(0)}
@@ -18,5 +15,3 @@ const userAvatar = (props: Props) => {
     </Avatar>
   );
 };
-
-export default userAvatar;
